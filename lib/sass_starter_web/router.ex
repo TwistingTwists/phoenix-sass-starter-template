@@ -18,6 +18,7 @@ defmodule SassStarterWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/sheets", SheetsLive
   end
 
   # Other scopes may use custom stacks.

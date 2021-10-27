@@ -1,0 +1,94 @@
+<!-- <div class="section">
+    <div class="container">
+    <div class="columns is-vcentered ">
+      <div class="column is-half">
+      <p></p>
+      
+      <div class="column is-one-fourth">
+      
+      </div>
+      <div class="column is-one-fourth">
+      
+      </div>
+    
+    </div>
+    </div>
+    </div>
+    </div> -->
+
+<div class="section">
+  <div class="container">
+    <%# <div class="columns is-multiline"> below line is for column gap between two columns%>
+    <div class="columns is-variable is-1 is-multiline">
+      <div class="column is-12">
+        <p class="subtitle is-size-4-desktop is-size-6-mobile">
+          Load Quizes From a Google Spreadsheet
+        </p>
+        <p>
+          Enter a sheet ID and hit the "load" button. QuizDrill will evaluate
+          the sheet to see if it contains valid quizzes for the QuizDrill bot.
+        </p>
+      </div>
+
+      <div class="column is-vtop is-9">
+        <input
+          type="text"
+          placeholder="Enter google Sheet ID or Google Sheet link"
+          name="gSheetID"
+        />
+        
+        <button class="is-size-7 ">LOAD</button>
+        </div>
+        <div class="column is-3">
+<p> three class </p>
+</div>
+
+      
+      <div class="column is-9">
+       <div class="is-size-5-mobile is-size-4-tablet">
+        <p class="is-size-4-mobile is-size-3-tablet">
+          Instructions for spreadsheet
+        </p>
+        <p>
+          A Spreadsheet comprises a set of quizzes, and each tab of the
+          spreadsheet is a separate quiz. </p>
+        <p>The title of the spreadsheet is the
+          title of the entire set of quizzes, and each tab name is the title of
+          the quiz contained in that tab.</p>
+        <p>Optionally, the first row of the quiz
+          may contain only data in column A. In this case, the text in column A
+          will be treated as a description/introduction to the quiz. You can
+          give some explanation or guidance here that the quiz-taker will be
+          shown when they launch the quiz. Each row will be one question, and
+          each question should have have 5 sections, in columns A - E.</p>
+        <p>Column A:
+          The category, or keywords associated with the quiz. You can be
+          flexible here, e.g., easy, medium, difficult, sports, history,
+          whatever-you-want</p>
+        <p>Column B: The question.</p>
+        <p>Column C: The choices.</p>
+        <p> All
+          the choices will appear in a single cell of the sheet. Each choice
+          should be given a letter, starting with A, and going as high as J, for
+          a maximum of 10 choices. Each choice should be preceded by its letter
+          in parens.</p>
+        <p>  For example: "(A) The War of 1812 (B) the Spanish Cival War
+          (C) The Yangtze Incident (D) The Trojan War (E) The Rohilla War". You
+          may put each choice on a new line if you wish, but within the same
+          cell in the same row.</p>
+        <p>Column D: The answer. This cell should only
+          contain a single letter between A - J and must correspond to one of
+          the choices.</p>
+        <p>Column E: The Explanation. This cell may be blank if no
+          explanation is required, or it may contain a few lines or a couple
+          paragraphs of text.</p>
+        <%# <p></p>
+        <p></p>
+        <p></p> %>
+
+               
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
